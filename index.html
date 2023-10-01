@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do app</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--Start (^^)-->
+  <body>
+    <div class="app">
+      <div class="container">
+        <div id="wrapper">
+          <input type="text" placeholder="Task To Be Done ..." />
+          <button id="add-btn">Add</button>
+        </div>
+        <div id="filter">
+          <button class="active" id="filter-all">All</button>
+          <button id="filter-active">Active</button>
+          <button id="filter-completed">Completed</button>
+        </div>
+        <div id="task">
+          <p id="pending-tasks">
+            You have <span class="count-value">0</span> task(s) to complete.
+          </p>
+        </div>
+      </div>
+      <p id="error">Input cannot be empty!</p>
+    </div>
+    <!-- JS -->
+    <script src="index.js"></script>
+  </body>
 </html>
